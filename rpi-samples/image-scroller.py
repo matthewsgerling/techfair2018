@@ -7,7 +7,7 @@ from PIL import Image
 class ImageScroller(SampleBase):
     def __init__(self, *args, **kwargs):
         super(ImageScroller, self).__init__(*args, **kwargs)
-        self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
+        self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext16.ppm")
 
     def run(self):
         if not 'image' in self.__dict__:
